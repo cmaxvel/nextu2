@@ -1,0 +1,138 @@
+
+<html>
+
+<head>
+			<title>Pagina02</title>
+			
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<link href="css/style2.css" rel="stylesheet" type="text/css">
+			
+</head>
+			
+<body>
+
+			<div id= "cabecera"; >
+
+					<svg> 
+							<image xlink: href="svg/logojesus.svg" width="450px" height="350px"></image>
+					</svg>
+			
+			</div>
+
+			<div id="div" >
+
+			<header>
+					<div id="" align="center">		
+						<h1>Curriculum Vitae</h1>
+					</div>
+						<h4> Maximiliano Velasquez Melchor Jes&uacute;s</h4>
+						<ul>
+								<li> <strong>Fecha Nacimiento:</strong> 26/03/71 </li>
+								<li> <strong>Lugar Nacimiento:</strong> Pasco - Peru </li>
+						</ul>
+
+						<p id="texto1" align="center" >
+							<a href="index01.html">INICIO</a>
+							<a href="EDUCACION.html">EDUCACION</a>
+							<a href="EXPERIENCIA.html">EXPERIENCIA</a>
+						</p>
+
+			</header>
+					
+				<h3>Educaci&oacute;n:</h3>
+
+				<div id="" align="center">
+				<table border="2" cellpadding="8", cellspacing="0">
+					  <thead>
+					      <tr>
+					          <th>Año</th>
+					          <th>Institucion</th>
+					          <th>Lugar</th>
+					          <th>¿Culmino?</th>
+					      </tr>
+					  </thead>
+					  <tbody>
+					      <tr>
+					          <td>2012</td>
+					          <td>Universidad La Catolica</td>
+					          <td>Lima</td>
+					          <td>Si</td>
+					      </tr>
+
+					      <tr>
+					          <td>2010</td>
+					          <td>Universidad de Ingenieria</td>
+					          <td>Lima</td>
+					          <td>Si</td>
+					          
+					      </tr>
+
+					      <tr>
+					          <td>2007</td>
+					          <td>Universidad de Lima</td>
+					          <td>Lima</td>
+					          <td>Si</td>
+					          
+					      </tr>
+					  </tbody>
+				</table>
+				</div>
+
+				<h3>Agregar Estudios</h3>
+				<form action="">
+						<p>
+						<label for ="year">Año :</label>
+						
+						<select id="year" name="year">
+						  <script>
+						  var myDate = new Date();
+						  var year = myDate.getFullYear();
+						  for(var i = 1920; i < year+1; i++){
+							  document.write('<option value="'+i+'">'+i+'</option>');
+						  }
+						  </script>
+						</select>
+						
+						</p>
+
+						<p>
+							<label for ="userinst">Instituci&oacute;n:</label><br>
+							<input type="text" name="userinst" size="38" placeholder="Universidad" autofocus required>
+						</p>
+
+						<p>
+							<label for ="userlug">Lugar de estudio: </label><br>
+							<textarea name="userlug" id="" cols="30" rows="3"></textarea>
+						</p>
+
+						<p>
+							<label for ="culmino">Culmino Estudios:</label>
+							<input type="radio" name ="culmino">Si
+							<input type="radio" name ="culmino">No
+						</p>
+						<div align="center">
+							<p><input id=""  type="submit" value="Enviar">
+						</div>
+						</p>				
+
+
+				</form>
+
+			</div>
+
+			<footer>
+					<div id= "pie"; align="center">
+
+					<p>Correo: c.maxvel@gmail.com  Telefono: 987654321  Direccion: Lima Peru</p>
+					
+					</div>
+			</footer>
+
+
+	   				
+	   		
+	   				
+			</body>
+
+			
+</html>
